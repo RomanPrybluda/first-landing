@@ -101,3 +101,17 @@ gulp.task('default', gulp.series(
   gulp.parallel('watch', 'server')
   )
 );
+
+/* ------------ Create docs for GitHub Pages ------------- */
+gulp.task('cleandocs', function del(cb) {
+  return rimraf('docs', cb);
+});
+
+gulp.task('createdocs', function () {
+  return gulp.src('./build/**/*.*')
+    .pipe(gulp.dest('docs'));
+});
+
+gulp.task('docs',
+  gulp.series('cleandocs', 'createdocs')  
+);
