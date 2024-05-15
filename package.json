@@ -1,0 +1,31 @@
+{
+  "name": "firstlanding",
+  "version": "1.0.0",
+  "description": "my first landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "author": "Roman Prybluda",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "browser-sync": "^3.0.2",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp.spritesmith": "^6.13.0",
+    "pug": "^3.0.2",
+    "rimraf": "^3.0.0",
+    "sass": "^1.77.0"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "normalize.scss": "^0.1.0"
+  }
+}
